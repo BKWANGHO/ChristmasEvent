@@ -1,12 +1,15 @@
 package christmas;
 
+import controller.OrderController;
+import model.OrderModel;
+import view.OrderView;
+
 import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-    OrderController controller = new OrderController();
-
-    controller.startApp(sc);
+        OrderView view = new OrderView();
+        OrderView.main(sc);
     }
 }

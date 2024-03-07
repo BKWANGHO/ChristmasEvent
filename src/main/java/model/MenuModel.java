@@ -1,11 +1,20 @@
-package christmas;
+package model;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MenuModel {
+    @Override
+    public String toString() {
+        return "MenuModel{" +
+                "appetizer=" + appetizer +
+                ", mainDish=" + mainDish +
+                ", dessert=" + dessert +
+                ", beverage=" + beverage +
+                '}';
+    }
 
-Map<String,Integer> appetizer;
+    Map<String,Integer> appetizer;
 Map<String,Integer> mainDish;
 Map<String,Integer> dessert;
 Map<String,Integer> beverage;
