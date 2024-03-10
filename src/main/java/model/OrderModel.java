@@ -6,8 +6,8 @@ import java.util.List;
 public class OrderModel {
 
     String date;
-    List<?> menu;
-    List<?> quantity;
+    List<String> menu;
+    List<String> quantity;
 
     @Override
     public String toString() {
@@ -28,19 +28,19 @@ public class OrderModel {
 
 
 
-    public List<?> getMenu() {
+    public List<String> getMenu() {
         return menu;
     }
 
-    public void setMenu(List<?> menu) {
+    public void setMenu(List<String> menu) {
         this.menu = menu;
     }
 
-    public List<?> getQuantity() {
+    public List<String> getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(List<?> quantity) {
+    public void setQuantity(List<String> quantity) {
         this.quantity = quantity;
     }
 }

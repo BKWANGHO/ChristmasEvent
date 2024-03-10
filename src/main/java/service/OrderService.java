@@ -1,20 +1,30 @@
 package service;
 
+import model.OrderModel;
+
 import java.util.List;
-import java.util.Map;
 
 public interface OrderService {
-   String orederMenu(String menu);
+    List<?> orderMenu(String menu);
 
-String totalPrice();
+   List<?> orderQuantity(String menu);
 
-String serviceMenu();
-Map<String, ?> benefits();
+    int totalPrice();
 
-String totlBenefit();
+    String serviceMenu();
 
-String benefitPrice();
 
-String eventBadge();
+    int totlBenefit(OrderModel orderDate);
 
+    String benefitPrice();
+
+    String eventBadge();
+
+    int christmasBenefit(OrderModel orderDate);
+
+    int weekdayDiscount(OrderModel orderDate);
+
+    int weekEndDiscount(OrderModel orderDate);
+
+    int specialDiscount(OrderModel orderDate);
 }
